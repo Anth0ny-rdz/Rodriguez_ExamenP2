@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Apuntes.Views.AnthonyRodriguez_Conteo"
              Title="AnthonyRodriguez_Conteo">
-    <StackLayout>
+    <StackLayout BackgroundColor="Aqua">
         <Label Text="Ingrese una cadena de caracteres:" />
         <Entry x:Name="txtInput" />
 
-        <Button Text="Calcular" Clicked="Calcular_Clicked" />
+        <Button Text="Calcular" BackgroundColor="Black" Clicked="Calcular_Clicked" />
 
         <Label Text="Resultados:" FontAttributes="Bold" />
         <Label x:Name="lblNumbers" />
