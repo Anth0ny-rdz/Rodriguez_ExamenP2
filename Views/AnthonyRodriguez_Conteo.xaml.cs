@@ -11,34 +11,34 @@ public partial class AnthonyRodriguez_Conteo : ContentPage
     {
         string input = txtInput.Text;
 
-        int numbers = 0;
-        int letters = 0;
-        int vowels = 0;
-        int upperCase = 0;
-        int lowerCase = 0;
+        int numeros = 0;
+        int letras = 0;
+        int vocales = 0;
+        int mayusculas = 0;
+        int minusculas = 0;
 
         foreach (char c in input)
         {
             if (char.IsDigit(c))
-                numbers++;
+                numeros++;
             else if (char.IsLetter(c))
             {
-                letters++;
+                letras++;
                 if ("aeiouAEIOU".Contains(c))
-                    vowels++;
+                    vocales++;
 
                 if (char.IsUpper(c))
-                    upperCase++;
+                    mayusculas++;
                 else
-                    lowerCase++;
+                    minusculas++;
             }
         }
 
-        lblNumbers.Text = $"Números: {numbers}";
-        lblLetters.Text = $"Letras: {letters}";
-        lblVowels.Text = $"Vocales: {vowels}";
-        lblUpperCase.Text = $"Mayúsculas: {upperCase}";
-        lblLowerCase.Text = $"Minúsculas: {lowerCase}";
+        lblNumbers.Text = $"Números: {numeros}";
+        lblLetters.Text = $"Letras: {letras}";
+        lblVowels.Text = $"Vocales: {vocales}";
+        lblUpperCase.Text = $"Mayúsculas: {mayusculas}";
+        lblLowerCase.Text = $"Minúsculas: {minusculas}";
         lblTotal.Text = $"Total: {input.Length}";
     }
 
