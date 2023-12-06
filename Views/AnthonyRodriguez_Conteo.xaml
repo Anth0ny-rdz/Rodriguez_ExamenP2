@@ -5,7 +5,7 @@
              Title="AnthonyRodriguez_Conteo">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Conteo"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
