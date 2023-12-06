@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Apuntes.Views.AnthonyRodriguez_Conteo"
              Title="AnthonyRodriguez_Conteo">
-    <VerticalStackLayout>
-        <Label 
-            Text="Conteo"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout>
+        <Label Text="Ingrese una cadena de caracteres:" />
+        <Entry x:Name="txtInput" />
+
+        <Button Text="Calcular" Clicked="Calcular_Clicked" />
+
+        <Label Text="Resultados:" FontAttributes="Bold" />
+        <Label x:Name="lblNumbers" />
+        <Label x:Name="lblLetters" />
+        <Label x:Name="lblVowels" />
+        <Label x:Name="lblUpperCase" />
+        <Label x:Name="lblLowerCase" />
+        <Label x:Name="lblTotal" />
+
+        <Button Text="Limpiar" Clicked="Limpiar_Clicked" />
+    </StackLayout>
 </ContentPage>
